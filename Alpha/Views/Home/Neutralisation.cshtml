@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Neutralisation";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .sidebar {
+            display: inline;
+            height: 100%;
+            width: 250px;
+            position: absolute;
+            top: 90px;
+            left: -50px;
+            background-color: rgba(0,0,0,0.0);
+            overflow-x: hidden;
+            padding-top: 50px;
+        }
+
+            .sidebar a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #363232;
+                display: block;
+            }
+
+                .sidebar a:hover {
+                    color: #f1f1f1;
+                }
+
+        @@media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+                .sidebar a {
+                    font-size: 18px;
+                }
+        }
+
+        .table-bordered {
+            margin: 20px;
+            border: thin solid #F0FFF0;
+            padding: 10px;
+            font-size: 25px;
+            color: black;
+        }
+
+        .bottom-left {
+            color: black;
+            background-color: rgba(255,255,255,.8);
+            border-radius: 1.5em;
+            box-shadow: 0 0 1em rgba(0,0,0,.25);
+            position: center;
+            width: auto;
+            height: auto;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 80px;
+            margin-left: -20px;
+            margin-top: 56px;
+        }
+
+        .lead {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-bordered bottom-left">
+        <h1>Neutralisation</h1>
+    </div>
+    <div>
+        <p class="lead">What is neutralisation?</p>
+    </div>
+
+    <div class="table-bordered row">
+        <ul>
+            <li>
+                A neutralization reaction is when an acid and an alkali react to form water and a salt. This reaction can be written as a general word equation as follows:
+                acid + alkali → salt + water
+            </li>
+        </ul>
+        <img src="~/Image File/download.png" style="padding-top: 10px; padding-bottom: 50px">
+        <ul>
+            <li>Some specific examples of neutralisation reactions are: </li>
+            <li>hydrochloric acid + sodium hydroxide → sodium chloride + water </li>
+            <li>sulfuric acid + potassium hydroxide → potassium sulfate + water </li>
+            <li>nitric acid + sodium hydroxide → sodium nitrate + water </li>
+        </ul>
+    </div>
+    <div class="table-bordered row">
+        <ul>
+            <li>
+                Sodium hyrdrogen carbonate is a white solid, as shown in the picture below. It is not an alkali itself but it can dissolve in water to produce an alkaline solution.
+                It can also take part in neutralisation reactions with acids but also produces carbon dioxide in addition to salt and water.
+            </li>
+            <li>The word quation for this reaction involving hydrochloric acid is:
+            <li>sodium hydrogen carbonate + hydrochloric acid → sodium chloride + carbon dioxide + water </li>
+            <li>Sodium hydrogen carbonate is also called sodium bicarbonate. It has several uses in neutralisation reactions. </li>
+        </ul>
+        <img src="https://www.worldofchemicals.com/Article/585/sodium%20bicarbonate.jpg" style="width: 300px; height: 300px" />
+    </div>
+    <div>
+        <APPLET CODE="Main.class" WIDTH="800" HEIGHT="500"></APPLET>
+    </div>
+</body>
+</html>

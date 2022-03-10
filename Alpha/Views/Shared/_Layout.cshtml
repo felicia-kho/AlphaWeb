@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<style>
+    .words {
+        margin-left:25em;
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar-header {
+        box-shadow: 0 1px 10px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        box-shadow: 0 0 4px #eee;
+        font-family: "Arial Black", Gadget, sans-serif;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 30px;
+        width: 100%;
+        color:black;
+        margin-top:-10px;
+    }
+
+    .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg,#5B84B1FF 50%, #FC766AFF 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: 0.5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+
+    .bg3 {
+        animation-duration: 5s;
+    }
+
+    @@-webkit-keyframes slide {
+        from {
+            transform: translateX(-25%);
+        }
+
+        to {
+            transform: translateX(25%);
+        }
+    }
+
+    .time{
+        font-size:18px;
+    }
+
+</style>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Acid And Alkalis</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" style="font-size: x-large;padding: 10px 25px;border-radius:12px"type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "navbar-brand" },new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                    <li>@Html.ActionLink("What are alkalis?", "WhatAreAlkalis", "Home", new { @class = "navbar-brand" }, new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                    <li>@Html.ActionLink("What are acids?", "WhatAreAcid", "Home", new { @class = "navbar-brand" }, new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                    <li>@Html.ActionLink("Detecting acid and alkalis using indicators", "DetectingAcidAndAlkalisUsingIndicators", "Home", new { @class = "navbar-brand" }, new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                    <li>@Html.ActionLink("The pH Scale", "ThePhScale", "Home", new { @class = "navbar-brand" }, new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                    <li>@Html.ActionLink("Neutralisation", "Neutralisation", "Home", new { @class = "navbar-brand" }, new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                    <li>@Html.ActionLink("Using Neutralisation reactions", "UsingNeutralisationReaction", "Home", new { @class = "navbar-brand" }, new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                    <li>@Html.ActionLink("Try the Quiz!", "Quiz", "Home", new { @class = "navbar-brand" }, new { @style = "font-size:22px;padding: 10px 25px" })</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+
+        <hr />
+        <footer>
+            <p class="time">&copy; @DateTime.Now.Year - Alpha </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

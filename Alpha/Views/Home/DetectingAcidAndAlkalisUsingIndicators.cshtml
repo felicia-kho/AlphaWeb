@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "Detecting Acids and Alkalis using Indicators";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        .table-bordered {
+            margin: 20px;
+            border: thin solid #F0FFF0;
+            padding: 10px;
+            color: black;
+        }
+
+        .lead {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            color: black;
+        }
+
+        .bottom-left {
+            color: black;
+            background-color: rgba(255,255,255,.8);
+            border-radius: 0.5em;
+            box-shadow: 0 0 1em rgba(0,0,0,.25);
+            position: center;
+            width: auto;
+            height: auto;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 80px;
+            margin-left: -20px;
+            margin-top: 56px;
+        }
+
+        .typing-demo {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 24px;
+        }
+
+        ul {
+            font-size: 25px;
+            color: black;
+        }
+
+        @@keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @@keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-bordered bottom-left">
+        <h1>Detecting Acids and Alkalis using Indicators</h1>
+    </div>
+    <p class="lead">What are indicators and how do we use them?</p>
+
+
+    <div class="table-bordered row">
+        <h2 style="color:black">First, let's look at some history</h2>
+        <ul>
+            <li>
+                Robert Boyle (the man in the picture below) knew that workers in France used plant juices to dye silk clothes and so he began experimenting with these plant juices to find a way to detect acids
+                alkalis easily. He tested acids and alkalis with cabbage juice and discovered that acids change red cabbage juice from purple to red.
+                When alkali is added, it changes this same juice from purple to green.
+            </li>
+            <li> During this time, he also found that juices from violets turned purple  with acid and greenish yellow with alkalis.</li>
+        </ul>
+        <img src="https://media.sciencephoto.com/image/c0017152/800wm" style="width: 230px; height: 300px; padding-bottom:30px" />
+    </div>
+    <div class="table-bordered row">
+        <h2 style="color:black">Litmus</h2>
+        <ul>
+            <li>Most importantly though, he discovered litmus, a juice from lichen, which went on to be widely used in chemistry laboratories around the globe.</li>
+            <li>
+                Litmus is originally blue but when acid is added, it turns red. This was the first easy test for acids.
+                Alkalis turn litmus dye from red to blue, and litmus is still used to this day to detect the relative amounts of acid or base in a solution.
+            </li>
+            <li>
+                Litmus is used as a solution, or it is absorbed onto paper strips which are called litmus paper. Litmus solution is purple but turns red when it an acid is added to it
+                or turns blue when an alkali is added.
+            </li>
+            <li>
+                As for litmus paper, blue litmus paper is used to test acids as it turns red when it is dipped into acid or when a drop of acid is put on it.
+                Red litmus paper is used to test for akalis. When red litmus paper comes into contact with an alkali, it turns blue.
+            </li>
+        </ul>
+        <img src="https://www.flinnsci.com/globalassets/flinn-scientific/all-product-images-rgb-jpegs/l0028_e.jpg?v=82641db91f744c4396eb2ed2454f4fce" style="width:250px; height:350px;padding-right:20px; padding-bottom:30px">
+        <img src="https://c8.alamy.com/comp/B2DE1W/litmus-paper-in-use-blue-litmus-turns-red-under-acidic-conditiona-B2DE1W.jpg" style="width:320px; height:320px; padding-left:20px; padding-bottom:30px">
+    </div>
+    <div class="table-bordered row">
+        <h2 style="color:black">Other indicators</h2>
+        <ul>
+            <li>There are over 20 indicators that scientists use to test for acids and alkalis. Here are two examples: </li>
+            <li>Methyl orange is pink in acid solutions and yellow in alkaline solutions.</li>
+            <li>Phenolphthalein is colourless in acid solutions and pink in alkaline solutions.</li>
+            <li>
+                There is even a plant that can be used as an indicator as it grows in the soil. It is called the hydrangea. Its colour can be affected
+                by the alkali in the soil. When hydrangeas are grown in soil containing limes, they have pink flowers, when they are grown in lime-freee soil however, they have blue flowers.
+                Therefore the colour of its flowers can be used to assess the alkalinity of the soil that it is grown in.
+            </li>
+        </ul>
+        <img src="~/Image File/phs.jpg" style="padding-bottom: 40px">
+
+    </div>
+
+
+    <div class="table-bordered">
+        <div>
+            <h2 style="color:black">Experiment Corner</h2>
+            <h3 style="color:black">Let's see how litmus paper changes colour!</h3>
+            <p style="font-size:25px">This is a red litmus paper and an alkaline solution. </p>
+            <img src="~/Image File/red litmus paper.gif" />
+        </div>
+            <div class="typing-demo">
+                The red litmus paper turns blue when meet the alkaline solution!
+            </div>
+
+        <div>
+            <p style="font-size:25px; padding-top:30px">This is a blue litmus paper and an acidic solution.</p>
+            <img src="~/Image File/blue litmus paper.gif" />
+        </div>
+            <div class="typing-demo">
+                The blue litmus paper turns red when meet the acidic solution!
+            </div>
+    </div>
+</body>
+</html>

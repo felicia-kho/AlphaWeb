@@ -1,0 +1,383 @@
+﻿
+@{
+    ViewBag.Title = "Quiz";
+}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            body {
+                background-color: lightblue;
+                font-family: Helvetica;
+            }
+
+            #main {
+                width: 82%;
+                max-width: 1000px;
+                border: 1px gray solid;
+                margin: auto;
+                margin-top: 60px;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px #eee;
+            }
+
+            #header {
+                color: black;
+                border-radius: 10px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
+                height: auto;
+            }
+
+            label {
+                display: block;
+                font-size: 20px;
+                font-family: Cambria;
+            }
+
+            input {
+                width: 30px;
+                margin-left: 20px;
+            }
+
+            h1 {
+                font-size: 58px;
+                color: ghostwhite;
+            }
+
+            h2 {
+                clear: both;
+                padding-top: 20px;
+                font-size: 30px;
+                font-family: Arial Black;
+            }
+
+            h3 {
+                clear: both;
+                padding-top: 20px;
+                font-size: 23px;
+                font-family: Cambria;
+            }
+
+            button {
+                background-color: #e7e7e7;
+                color: black;
+                border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-top: 50px;
+                border-radius: 10px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .sidebar {
+                display: inline;
+                height: 100%;
+                width: 250px;
+                position: absolute;
+                top: 90px;
+                left: -50px;
+                background-color: rgba(0,0,0,0.0);
+                overflow-x: hidden;
+                padding-top: 50px;
+            }
+
+                .sidebar a {
+                    padding: 6px 8px 6px 16px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: #363232;
+                    display: block;
+                }
+
+                    .sidebar a:hover {
+                        color: #f1f1f1;
+                    }
+
+            @@media screen and (max-height: 450px) {
+                .sidebar {
+                    padding-top: 15px;
+                }
+
+                    .sidebar a {
+                        font-size: 18px;
+                    }
+            }
+            form{
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="main">
+            <div id="header">
+                <h1>Quiz</h1>
+            </div>
+            <form id="form1">
+
+                <h2>_____ are strong bases that turn litmus paper from red to blue.</h2>
+                <label ><input type="radio" name="question1" value="0"  />Acids</label>
+                <label><input type="radio" name="question1" value="4"  />Alkali</label>
+                <label ><input type="radio" name="question1" value="0"  />Electrolyte</label>
+                <label ><input type="radio" name="question1" value="0"  />Water</label>
+
+                <h2>Indigestion medicine is taken to neutralise excess stomach acid,it is ________.</h2>
+                <label ><input type="radio" name="question2" value="4"  />alkaline</label>
+                <label><input type="radio" name="question2" value="0"  />bases</label>
+                <label><input type="radio" name="question2" value="0"  />neutral</label>
+                <label><input type="radio" name="question2" value="0"/>acids</label>
+
+                <h2>Which of the following is the strongest alkalis?</h2>
+                <label><input type="radio" name="question3" value="0"  />Baking Soda</label>
+                <label><input type="radio" name="question3" value="4" />Sodium Hydroxide</label>
+                <label><input type="radio" name="question3" value="0"  />Calcium Hydroxide</label>
+                <label><input type="radio" name="question3" value="0"  />Ammonia</label>
+
+                <h2>   _______ substances contain an alkali.</h2>
+                <label ><input type="radio" name="question4" value="0"/>Coca Cola</label>
+                <label ><input type="radio" name="question4" value="0" />Vinegar</label>
+                <label ><input type="radio" name="question4" value="4"/>Baking Powder</label>
+                <label ><input type="radio" name="question4" value="0"  />Distilled Water</label>
+
+                <h2>Arrange the alkalis from weak to strong alkalis.</h2>
+                <h3>
+                    1. Drain Cleaner<br />
+                    2. Baking Soda<br />
+                    3. Ammonia<br />
+                    4. Antacid Tablets
+                </h3>
+                <label><input type="radio" name="question5" value="0" id="if_string" />1,2,3,4</label>
+                <label><input type="radio" name="question5" value="4" id="if_join" />2,4,3,1</label>
+                <label><input type="radio" name="question5" value="0" id="if_condition" />1,3,2,4</label>
+                <label><input type="radio" name="question5" value="0" id="if_condition" />4,3,2,1</label>
+
+                <h2>_____ is substances that contain acid.</h2>
+                <label ><input type="radio" name="question6" value="0"  />Carrot</label>
+                <label ><input type="radio" name="question6" value="0"  />Washing powder</label>
+                <label ><input type="radio" name="question6" value="4"  />Orange</label>
+                <label ><input type="radio" name="question6" value="0"  />Distilled Water </label>
+
+                <h2>When found in food,acids are ________.</h2>
+                <label for="sub_string"><input type="radio" name="question7" value="4" id="sub_string" />sour</label>
+                <label for="sub_join"><input type="radio" name="question7" value="0" id="sub_join" />bitter</label>
+                <label for="sub_info"><input type="radio" name="question7" value="0" id="sub_info" />salty</label>
+                <label for="sub_condition"><input type="radio" name="question7" value="0" id="sub_condition" />slippery</label>
+
+                <h2>Which of the following is the strongest acid?</h2>
+                <label for="cat_string"><input type="radio" name="question8" value="0" id="cat_string" />Oven Cleaner,13.5</label>
+                <label for="cat_join"><input type="radio" name="question8" value="4" id="cat_join" />Lemon Juice,2.5</label>
+                <label for="cat_info"><input type="radio" name="question8" value="0" id="cat_info" />Soap,10</label>
+                <label for="cat_condition"><input type="radio" name="question8" value="0" id="cat_condition" />Blood,7.4</label>
+
+                <h2> Cow's milk is  _______ -forming food.</h2>
+                <label for="if_string"><input type="radio" name="question9" value="0" id="if_string" />neutral</label>
+                <label for="if_join"><input type="radio" name="question9" value="0" id="if_join" />alkaline</label>
+                <label for=" if_info"><input type="radio" name="question9" value="4" id="if_info" />acids</label>
+                <label for="if_condition"><input type="radio" name="question9" value="0" id="if_condition" />bases</label>
+
+                <h2>Arrange the strongest acids from weak to strong acids.</h2>
+                <h3>
+                    1. Sulphuric acid<br />
+                    2. Hydrogen bromide<br />
+                    3. Hydrogen chloride<br />
+                    4. Nitrous acid
+                </h3>
+                <label><input type="radio" name="question10" value="0"  />1,2,3,4</label>
+                <label><input type="radio" name="question10" value="0"  />2,4,3,1</label>
+                <label><input type="radio" name="question10" value="0" />1,3,2,4</label>
+                <label><input type="radio" name="question10" value="4"  />4,3,2,1</label>
+
+                <h2>Acids turn red cabbage juice from purple to_____.</h2>
+                <label><input type="radio" name="question11" value="4" />Blue</label>
+                <label><input type="radio" name="question11" value="0" />Green</label>
+                <label><input type="radio" name="question11" value="0" />Red</label>
+                <label><input type="radio" name="question11" value="0" />Purple</label>
+
+                <h2>Red litmus paper turns __ when tested with alkalis.</h2>
+                <label><input type="radio" name="question12" value="4" />Blue</label>
+                <label><input type="radio" name="question12" value="0" />Red</label>
+                <label><input type="radio" name="question12" value="0" />Yellow </label>
+                <label><input type="radio" name="question12" value="0" />Green</label>
+
+                <h2>pH scale stands for ________.</h2>
+                <label ><input type="radio" name="question13" value="4" />Power of Hydrogen</label>
+                <label ><input type="radio" name="question13" value="0"  />Power of Hydrochloric Acid</label>
+                <label ><input type="radio" name="question13" value="0"  />Power of Hyaluronic Acid</label>
+                <label ><input type="radio" name="question13" value="0"  />Power of Hydrolysis</label>
+
+                <h2>pH scale run from what numbers?</h2>
+                <label><input type="radio" name="question14" value="0" />1-10</label>
+                <label><input type="radio" name="question14" value="4" />1-11</label>
+                <label><input type="radio" name="question14" value="0" />1-12</label>
+                <label><input type="radio" name="question14" value="0" />1-14</label>
+
+                <h2>   _______ is normal range for pH in surface water systems.</h2>
+                <label><input type="radio" name="question15" value="0" />3.5</label>
+                <label><input type="radio" name="question15" value="0" />4.5</label>
+                <label><input type="radio" name="question15" value="4" />6.5</label>
+                <label><input type="radio" name="question15" value="0" />9.5</label>
+
+                <h2>Arrange the pH scale from weak to strong (acid) .</h2>
+                <h3>
+                    1.&ensp;1.0 <br />
+                    2.&ensp;2.5<br />
+                    3.&ensp;4.4<br />
+                    4.&ensp;6.3
+                </h3>
+                <label><input type="radio" name="question16" value="0"  />1,2,3,4</label>
+                <label><input type="radio" name="question16" value="0"  />2,4,3,1</label>
+                <label><input type="radio" name="question16" value="0"  />1,3,2,4</label>
+                <label><input type="radio" name="question16" value="4"  />4,3,2,1</label>
+
+                <h2>The neutralisation reaction produces_______.</h2>
+                <label ><input type="radio" name="question17" value="0" />Salt</label>
+                <label ><input type="radio" name="question17" value="4" />Salt and water</label>
+                <label ><input type="radio" name="question17" value="0" />Water</label>
+                <label ><input type="radio" name="question17" value="0" />Salt and alkali</label>
+
+                <h2>_______ is not an alkali itself but it can dissolve in water to produce an _______ solution.</h2>
+                <label ><input type="radio" name="question18" value="0" />Hydrochloric acid, acidic</label>
+                <label ><input type="radio" name="question18" value="0" />Soap, alkaline</label>
+                <label ><input type="radio" name="question18" value="4" />Sodium hydrogen carbonate, alkaline</label>
+                <label ><input type="radio" name="question18" value="0" />Vinegar, acid</label>
+
+                <h2>________ + potassium hydroxide → potassium sulfate + water</h2>
+                <label ><input type="radio" name="question19" value="0"  />Malic acid</label>
+                <label ><input type="radio" name="question19" value="4"  />Sulfuric acid</label>
+                <label ><input type="radio" name="question19" value="0" />Hydrochloric acid</label>
+                <label ><input type="radio" name="question19" value="0"  />Tartaric acid</label>
+
+                <h2>___________ + __________ → sodium chloride + carbon dioxide + water</h2>
+                <label ><input type="radio" name="question20" value="0"  />Hydrochloric acid, sodium oxide</label>
+                <label ><input type="radio" name="question20" value="0"  />Sodium hydroxide, hydrochloric acid</label>
+                <label ><input type="radio" name="question20" value="0"  />Calcium carbonate, chlorine</label>
+                <label ><input type="radio" name="question20" value="4" />Sodium hydrogen carbonate, hydrochloric acid</label>
+
+                <h2>_____are_____which can neutralised the____wasp sting.</h2>
+                <label ><input type="radio" name="question21" value="0" />Baking soda, weak alkaline, acidic</label>
+                <label ><input type="radio" name="question21" value="0" />Baking soda, weak acid, alkaline</label>
+                <label ><input type="radio" name="question21" value="4" />Vinegar, weak acid, alkaline</label>
+                <label ><input type="radio" name="question21" value="0" />Vinegar, weak alkaline, acidic</label>
+
+                <h2>Our stomach carries around________,too much of it will cause _______.</h2>
+                <label><input type="radio" name="question22" value="4" />Hydrochloric acid, indigestion</label>
+                <label><input type="radio" name="question22" value="0" />Lactic acid, indigestion</label>
+                <label><input type="radio" name="question22" value="0" />Tartaric acid, heartburn</label>
+                <label><input type="radio" name="question22" value="0" />Glycolic acid, heartburn</label>
+
+                <h2>The _____ plant can be used as an indicator as it grows in the soil as its colour gets affected by the _____ in the soil.</h2>
+                <label><input type="radio" name="question23" value="0" />Hibiscus, acid</label>
+                <label><input type="radio" name="question23" value="0" />Hydrangea, acid</label>
+                <label><input type="radio" name="question23" value="4" />Hydrangea, alkali</label>
+                <label><input type="radio" name="question23" value="0" />Rose, alkali</label>
+
+                <h2>Litmus solution is ____ but turns red when ____ is added and turns _____ when alkali is added.</h2>
+                <label><input type="radio" name="question24" value="0" />Purple, alkali, green</label>
+                <label><input type="radio" name="question24" value="0" />Pink, alkali, green</label>
+                <label><input type="radio" name="question24" value="0" />Pink, acid, blue</label>
+                <label><input type="radio" name="question24" value="4" />Purple, acid, blue</label>
+
+                <h2>Arrange the steps while using extinguisher.</h2>
+                <h3>
+                    1. Neutralisation occur.<br />
+                    2. Acid mixes with sodium bicarbonate solution.<br />
+                    3. plunger struck,<br />
+                    4. The pressure of Carbon dioxide produce in the reaction pushes the water out.
+                </h3>
+                <label><input type="radio" name="question25" value="0" id="if_string" />1,2,3,4</label>
+                <label><input type="radio" name="question25" value="0" id="if_join" />2,4,3,1</label>
+                <label><input type="radio" name="question25" value="0" id="if_condition" />1,3,2,4</label>
+                <label><input type="radio" name="question25" value="4" id="if_condition" />3,2,1,4</label>
+
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+
+            <p>Your grade is: <span id="grade">__</span></p>
+            <p id="grade2"></p>
+
+            <script>
+            document.getElementById("form1").onsubmit = function () {
+                question1 = parseInt(document.querySelector('input[name = "question1"]:checked').value);
+                question2 = parseInt(document.querySelector('input[name = "question2"]:checked').value);
+                question3 = parseInt(document.querySelector('input[name = "question3"]:checked').value);
+                question4 = parseInt(document.querySelector('input[name = "question4"]:checked').value);
+                question5 = parseInt(document.querySelector('input[name = "question5"]:checked').value);
+                question6 = parseInt(document.querySelector('input[name = "question6"]:checked').value);
+                question7 = parseInt(document.querySelector('input[name = "question7"]:checked').value);
+                question8 = parseInt(document.querySelector('input[name = "question8"]:checked').value);
+                question9 = parseInt(document.querySelector('input[name = "question9"]:checked').value);
+                question10 = parseInt(document.querySelector('input[name = "question10"]:checked').value);
+                question11 = parseInt(document.querySelector('input[name = "question11"]:checked').value);
+                question12 = parseInt(document.querySelector('input[name = "question12"]:checked').value);
+                question13 = parseInt(document.querySelector('input[name = "question13"]:checked').value);
+                question14 = parseInt(document.querySelector('input[name = "question14"]:checked').value);
+                question15 = parseInt(document.querySelector('input[name = "question15"]:checked').value);
+                question16 = parseInt(document.querySelector('input[name = "question16"]:checked').value);
+                question17 = parseInt(document.querySelector('input[name = "question17"]:checked').value);
+                question18 = parseInt(document.querySelector('input[name = "question18"]:checked').value);
+                question19 = parseInt(document.querySelector('input[name = "question19"]:checked').value);
+                question20 = parseInt(document.querySelector('input[name = "question20"]:checked').value);
+                question21 = parseInt(document.querySelector('input[name = "question21"]:checked').value);
+                question22 = parseInt(document.querySelector('input[name = "question22"]:checked').value);
+                question23 = parseInt(document.querySelector('input[name = "question23"]:checked').value);
+                question24 = parseInt(document.querySelector('input[name = "question24"]:checked').value);
+                question25 = parseInt(document.querySelector('input[name = "question25"]:checked').value);
+
+      
+                result = question1 + question2 + question3 + question4 + question5 + question6 + question7 + question8 + question9 + question10 + question11 + question12 + question13 +
+                    question14 + question15 + question16 + question17 + question18 + question19 + question20 + question21 + question22 + question23 + question24
+
+                document.getElementById("grade").innerHTML = result;
+
+                grading = [
+                    { score: 0 , feedback: "I don't think you studied", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Emoji_u1f624.svg/1024px-Emoji_u1f624.svg.png" },
+                    { score: 4, feedback: "I don't think you studied", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Emoji_u1f624.svg/1024px-Emoji_u1f624.svg.png" },
+                    { score: 8, feedback: "I don't think you studied", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Emoji_u1f624.svg/1024px-Emoji_u1f624.svg.png" },
+                    { score: 12, feedback: "I don't think you studied", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Emoji_u1f624.svg/1024px-Emoji_u1f624.svg.png" },
+                    { score: 16, feedback: "I don't think you studied", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Emoji_u1f624.svg/1024px-Emoji_u1f624.svg.png" },
+                    { score: 20 , feedback: "You need to spend more time. Try again", image: "https://specials-images.forbesimg.com/imageserve/602c09c9135a060af5e1a8f4/960x0.png?fit=scale" },
+                    { score: 24, feedback: "You need to spend more time. Try again", image: "https://specials-images.forbesimg.com/imageserve/602c09c9135a060af5e1a8f4/960x0.png?fit=scale" },
+                    { score: 28, feedback: "You need to spend more time. Try again", image: "https://specials-images.forbesimg.com/imageserve/602c09c9135a060af5e1a8f4/960x0.png?fit=scale" },
+                    { score: 32, feedback: "You need to spend more time. Try again", image: "https://specials-images.forbesimg.com/imageserve/602c09c9135a060af5e1a8f4/960x0.png?fit=scale" },
+                    { score: 36, feedback: "You need to spend more time. Try again", image: "https://specials-images.forbesimg.com/imageserve/602c09c9135a060af5e1a8f4/960x0.png?fit=scale" },
+                    { score: 40 , feedback: "I think you could do better. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Emoji_u1f633.svg/1024px-Emoji_u1f633.svg.png" },
+                    { score: 44, feedback: "I think you could do better. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Emoji_u1f633.svg/1024px-Emoji_u1f633.svg.png" },
+                    { score: 48, feedback: "I think you could do better. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Emoji_u1f633.svg/1024px-Emoji_u1f633.svg.png" },
+                    { score: 52, feedback: "I think you could do better. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Emoji_u1f633.svg/1024px-Emoji_u1f633.svg.png" },
+                    { score: 56, feedback: "I think you could do better. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Emoji_u1f633.svg/1024px-Emoji_u1f633.svg.png" },
+                    { score: 60 , feedback: "So close. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emoji_u1f60f.svg/480px-Emoji_u1f60f.svg.png" },
+                    { score: 64, feedback: "So close. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emoji_u1f60f.svg/480px-Emoji_u1f60f.svg.png" },
+                    { score: 68, feedback: "So close. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emoji_u1f60f.svg/480px-Emoji_u1f60f.svg.png" },
+                    { score: 72, feedback: "So close. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emoji_u1f60f.svg/480px-Emoji_u1f60f.svg.png" },
+                    { score: 76, feedback: "So close. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emoji_u1f60f.svg/480px-Emoji_u1f60f.svg.png" },
+                    { score: 80, feedback: "Almost There! Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emoji_u1f60e.svg/1024px-Emoji_u1f60e.svg.png" },
+                    { score: 84, feedback: "Almost There! Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emoji_u1f60e.svg/1024px-Emoji_u1f60e.svg.png" },
+                    { score: 88, feedback: "Almost There! Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emoji_u1f60e.svg/1024px-Emoji_u1f60e.svg.png" },
+                    { score: 92, feedback: "Almost There! Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emoji_u1f60e.svg/1024px-Emoji_u1f60e.svg.png" },
+                    { score: 96, feedback: "Almost There! Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emoji_u1f60e.svg/1024px-Emoji_u1f60e.svg.png" },
+                    { score: 100, feedback: "Excellent! You're So Great!", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Emoji_u1f606.svg/1024px-Emoji_u1f606.svg.png" },
+                ];
+
+                for (i = 0; i < grading.length; i++) {
+                    if (result == grading[i].score) {
+                        result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+                    }
+                }
+                document.getElementById("grade2").innerHTML = result2;
+                return false; }
+            </script>
+
+
+        </div>
+
+    </body>
+</html>

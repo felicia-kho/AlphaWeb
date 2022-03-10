@@ -1,0 +1,201 @@
+﻿@{
+    ViewBag.Title = "QuizUsingNeutralisationReaction";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Neutralisation Reaction Quiz</title>
+    <style>
+
+        body {
+            background-color: lightblue;
+            font-family: Helvetica;
+        }
+
+        #main {
+            width: 82%;
+            max-width: 1000px;
+            border: 1px gray solid;
+            margin: auto;
+            margin-top: 60px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #eee;
+        }
+
+        #header {
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
+            height: auto;
+        }
+
+        label {
+            display: block;
+            font-size: 20px;
+            font-family: Cambria;
+        }
+
+        input {
+            width: 30px;
+            margin-left: 20px;
+        }
+
+        h1 {
+            font-size: 58px;
+            color: ghostwhite;
+        }
+
+        h2 {
+            clear: both;
+            padding-top: 20px;
+            font-size: 30px;
+            font-family: Arial Black;
+        }
+
+        h3 {
+            clear: both;
+            padding-top: 20px;
+            font-size: 25px;
+            font-family: 'Times New Roman';
+        }
+
+        button {
+            background-color: #e7e7e7;
+            color: black;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .sidebar {
+            display: inline;
+            height: 100%;
+            width: 250px;
+            position: absolute;
+            top: 90px;
+            left: -50px;
+            background-color: rgba(0,0,0,0.0);
+            overflow-x: hidden;
+            padding-top: 50px;
+        }
+
+            .sidebar a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #363232;
+                display: block;
+            }
+
+                .sidebar a:hover {
+                    color: #f1f1f1;
+                }
+
+        @@media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+                .sidebar a {
+                    font-size: 18px;
+                }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="header">
+            <h1>Using Neutralisation Reaction Quiz</h1>
+        </div>
+        <form id="form1">
+
+            <h2>_____are_____which can neutralised the____wasp sting.</h2>
+            <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Baking soda, weak alkaline, acidic</label>
+            <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Baking soda, weak acid, alkaline</label>
+            <label for="var_info"><input type="radio" name="variable" value="20" id="var_info" />Vinegar, weak acid, alkaline</label>
+            <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition" />Vinegar, weak alkaline, acidic</label>
+
+            <h2>Our stomach carries around________,too much of it will cause _______.</h2>
+            <label for="sub_string"><input type="radio" name="sub" value="20" id="sub_string" />hydrochloric acid, indigestion</label>
+            <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join" />Lactic acid, indigestion</label>
+            <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Tartaric acid, heartburn</label>
+            <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Glycolic acid, heartburn</label>
+
+            <h2>Explain briefly why baking powder is used to bake a cake.</h2>
+            <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Baking powder release Oxygen gas, to increase the volume and lighten the texture of baked cake.</label>
+            <label for="cat_join"><input type="radio" name="con" value="20" id="cat_join" />Baking powder release Carbon dioxide gas, to increase the volume and lighten the texture of baked cake.</label>
+            <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Baking powder release Oxygen gas, to decrease the volume and aggravate the texture of baked cake.</label>
+            <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Baking powder release Carbon dioxide gas, to decrease the volume and aggravate the texture of baked cake.</label>
+
+            <h2>Calcium hydroxide is used in ______ to _______ the acidity.</h2>
+            <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Baking cake, neutralised</label>
+            <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />Cure indigestion, acidify</label>
+            <label for=" if_info"><input type="radio" name="ifstate" value="20" id="if_info" />fields, neutralised</label>
+            <label for="if_condition"><input type="radio" name="ifstate" value="0" id="if_condition" />cure bee sting, acidify</label>
+
+            <h2>Arrange the steps while using extinguisher.</h2>
+            <h3>
+                1. Neutralisation occur.<br />
+                2. Acid mixes with sodium bicarbonate solution.<br />
+                3. plunger struck,<br />
+                4. The pressure of Carbon dioxide produce in the reaction pushes the water out.
+            </h3>
+            <label><input type="radio" name="question5" value="0" id="if_string" />1,2,3,4</label>
+            <label><input type="radio" name="question5" value="0" id="if_join" />2,4,3,1</label>
+            <label><input type="radio" name="question5" value="0" id="if_condition" />1,3,2,4</label>
+            <label><input type="radio" name="question5" value="20" id="if_condition" />3,2,1,4</label>
+            <button type="submit" value="Submit">Submit</button>
+
+        </form>
+
+        <p>Your grade is: <span id="grade">__</span></p>
+        <p id="grade2"></p>
+
+        <script>
+            document.getElementById("form1").onsubmit = function () {
+                variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+                sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+                con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+                ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+                question5 = parseInt(document.querySelector('input[name = "question5"]:checked').value);
+
+                result = variable + sub + con + ifstate + question5;
+
+                document.getElementById("grade").innerHTML = result;
+
+                grading = [
+                    { score: 0, feedback: "I don't think you studied", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Emoji_u1f624.svg/1024px-Emoji_u1f624.svg.png" },
+                    { score: 20, feedback: "You need to spend more time. Try again", image: "https://specials-images.forbesimg.com/imageserve/602c09c9135a060af5e1a8f4/960x0.png?fit=scale" },
+                    { score: 40, feedback: "I think you could do better. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Emoji_u1f633.svg/1024px-Emoji_u1f633.svg.png" },
+                    { score: 60, feedback: "So close. Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emoji_u1f60f.svg/480px-Emoji_u1f60f.svg.png" },
+                    { score: 80, feedback: "Almost There! Try again.", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emoji_u1f60e.svg/1024px-Emoji_u1f60e.svg.png" },
+                    { score: 100, feedback: "Excellent! You're So Great!", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Emoji_u1f606.svg/1024px-Emoji_u1f606.svg.png" },
+                ];
+
+                for (i = 0; i < grading.length; i++) {
+                    if (result == grading[i].score) {
+                        result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+                    }
+                }
+                document.getElementById("grade2").innerHTML = result2;
+                return false; }
+        </script>
+
+
+    </div>
+
+</body>
+</html>

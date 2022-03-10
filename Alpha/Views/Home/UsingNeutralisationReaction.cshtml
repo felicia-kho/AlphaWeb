@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "UsingNeutralisationReaction";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .table-bordered {
+            margin: 20px;
+            border: thin solid #F0FFF0;
+            padding: 10px;
+        }
+
+        .lead {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            color:black;
+        }
+
+        .bottom-left {
+            color: black;
+            background-color: rgba(255,255,255,.8);
+            border-radius: 0.5em;
+            box-shadow: 0 0 1em rgba(0,0,0,.25);
+            position: center;
+            width: auto;
+            height: auto;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 80px;
+            margin-left: -20px;
+            margin-top: 56px;
+        }
+
+        .col-md-9 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            font-size: 25px;
+        }
+
+        hr {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.5;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: black;
+        }
+
+        img:hover {
+            transform: scaleX(-1);
+        }
+
+        img {
+            border-radius: 13px;
+            float:left;
+            margin-right:22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-bordered bottom-left">
+        <h1 style="font-size:50px">Using Neutralisation Reaction</h1>
+    </div>
+        <p class="lead">What do we use for neutralisation?</p>
+        <p class="lead"> Neutralisation is used in various fields. They are applied in Agriculture, Industries, Health and even at Home.</p>
+    
+
+    <div class="row">
+        <div class="table-bordered col-md-9">
+            <h2>Insect Stings</h2>
+            <img src="~/Image File/insect-sting.jpg" alt ="Insect Stings" width="280" height="220" />
+            <br />
+            <ul>
+                <li>Wasp stings are alkaline and can be neutralised with vinegar, which is weak acid.</li>
+                <li>Bee stings and ant bites are both acidic.</li>
+                <li>Alkaline medicine, such as baking powder, may be used to neutralise them.</li>
+                <li>The acid or alkali used in an insect sting is delivered by a sharp point at the tip of the insect's abdomen.</li>
+            </ul>
+        </div>
+
+        <div class="table-bordered col-md-9">
+            <h2>Curing Indigestion</h2>
+            <img src="~/Image File/indigestion.gif" alt="Indigestion" width="270" height="230" />
+            <ul style="list-style-type:square">
+                <li>Sodium bicarbonate is used in some of the tablets that are made to cure indigestion.</li>
+                <li>Indigestion is caused by the stomach making too much acid as it digest food.</li>
+                <li>
+                    When a tablet of sodium bicarbonate is swallowed, the chemical dissolves to make an alkaline solution,
+                    which neutralises the acid in the stomach and cures indigestion.
+                </li>
+            </ul>
+        </div>
+
+        <div class="table-bordered col-md-9">
+            <h2>Baking a Cake</h2>
+            <img src="~/Image File/rising a cake.gif" alt="Baking Soda" width="300" height="200" />
+            <ul style="list-style-type: circle ">
+                <li>Baking powder contains a mixture of a solid acid and a sodium bicarbonate.</li>
+                <li>When the baking powder is mixed with water and flour to make a cake, the acid and the sodium bicarbonate dissolve in the water and take part in a neutralisation reaction.</li>
+                <li>The carbon dioxide gas forms bubbles in the mixture and makes it rise to give the cake a light texture.</li>
+            </ul>
+
+        </div>
+        <div class="table-bordered col-md-9">
+            <h2>A Model Volcano</h2>
+            <img src="~/Image File/volcano.gif" alt="Volcano" width="315" height="300" />
+            <ol type="1">
+                <li>Add a tablespoon of sodium bicarbonate, which is baking soda, to an empty plastic drink bottle. </li>
+                <li>Then build a mound of sand around the bottle so tha it lookes like a vanical volcano.</li>
+                <li>Finally, add red dye to half a cup vinegar, then poured the vinegar into the bottle.</li>
+                <li>Moments later a red froth would have emerged from the top of the bottle and flowed down the cone of sand, like a lava flowing down a volcano.</li>
+                <li>This model does not illustrate how lava is formed, it show the power of neutralisation reaction, between the baking soda and the vinegar.</li>
+            </ol>
+        </div>
+
+        <div class="table-bordered col-md-9">
+            <h2>Fighting a Fire</h2>
+            <img src="~/Image File/fire fighting.jpg" alt="Fighting a Fire" width="350" height="300" />
+            <ol type="1">
+                <li>The soda-acid fire extinguisher contains a bottle of sulfuric acid and a solution of sodium bicarbonate.</li>
+                <li>When the plunger is struck or the extinguisher is turned upside down, the acid mixes with the sodium bicarbonate solution and a neutralisation reaction takes place.</li>
+                <li>The pressure of the carbon dioxide produced in the reaction pushes the water out of the extinguisher and onto the fire.</li>
+            </ol>
+        </div>
+
+        <div class="table-bordered col-md-9">
+            <h2>Improving crop Growth</h2>
+            <img src="~/Image File/neutralisation in argriculture.jpg" alt="Improving Crop Growth" width="360" height="260" />
+            <ul style="list-style-type:lower-roman">
+                <li>Acidity in the soil affects the growth of crops.</li>
+                <li>It makes them produce less food.</li>
+                <li>Lime(calcium hydroxide) is used to neutralise acidity in soil.</li>
+                <li>When it is applied to fields it makes them appear temporarily white.</li>
+            </ul>
+        </div>
+    </div>
+    <div >
+        <script>
+            class A {
+                display() {
+                    document.writeln("YOU HAVE FINISH YOUR LEARNING!<br>");
+                }
+            }
+            class B extends A {
+                display() {
+                    document.writeln("LETS TRY THE QUIZ!");
+                }
+            }
+
+            var a = [new A(), new B()]
+            a.forEach(function (msg) {
+                msg.display();
+            });
+        </script>
+        
+    </div>
+    @Html.ActionLink("Try the Quiz!", "Quiz", "Home", new { @class = "navbar-brand" }, new { @style = "border-radius: 12px;cursor: pointer;font-size:20px;padding: 10px 25px;border: 2px solid #f44336;background-color: white;color: black;display: inline-block;" })
+</body>
+</html >
+
